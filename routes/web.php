@@ -75,6 +75,8 @@ Route::prefix('admin')->group(function() {
         Route::get('/locations', [LocationController::class, 'index'])->name('location');
         Route::get('/create', [LocationController::class, 'create'])->name('add_location');
         Route::post('/save_location', [LocationController::class, 'store'])->name('save.location');
+        Route::get('/location_edit/{id}', [LocationController::class, 'edit'])->name('location_edit');
+        Route::post('/location_update/{id}', [LocationController::class, 'update'])->name('location_update');
 
         // Blog Routes
         Route::get('/blogs', [BlogController::class, 'index'])->name('blog_listing');

@@ -180,6 +180,20 @@
             ] 
         });
     });
+    $(function () {
+        $('#location-table').DataTable({
+            processing: true,
+            serverSide: true,
+            responsive: true,
+            ajax: "{{ route('location') }}",
+            columns: [
+                {data: 'id', name: 'id'},
+                {data: 'city', name: 'city'},
+                {data: 'state', name: 'state'},
+                {data: 'action', name: 'action'},
+            ] 
+        });
+    });
 
     CKEDITOR.replace('editor');
 </script>

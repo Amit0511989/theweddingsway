@@ -4,10 +4,36 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Blog;
+use Yajra\DataTables\Facades\DataTables;
 use Illuminate\Http\Request;
 
 class BlogController extends Controller
 {
+
+    public function index(Request $request){
+        $blogs = Blog::orderby('id', 'desc')->get();
+        /*  echo '<pre>';
+        Print_r($blogs);
+        echo '</pre>';
+        exit(); */ 
+         if ($request->ajax()) { 
+            return DataTables::of($blogs)
+             ->addColumn('roles',function($blogs){
+                return $blogs->role_detail->name;
+             })
+            ->addColumn('action', function($blogs){
+                $actionBtn = '<div class="d-flex flex-row-reverse">
+                <form method="GET" action="'. route("user_delete", $blogs->id) .'"> <input type="hidden" name="_token" value="'. csrf_token() .'" />                  
+                <a href="#" class="btn btn-round btn-danger btn-icon btn-sm remove show_confirm"><i class="fas fa-times"></i></a>
+                </form><a href="'. url("/admin/user_edit", $blogs->id) .'" class="btn btn-round btn-warning btn-icon btn-sm edit mr-2"><i class="fas fa-edit"></i></a> </div>';
+                return $actionBtn;
+            })
+            ->escapeColumns([])       
+            ->make(true);
+        } 
+        return view('admin.blogs.index',compact('blogs'));
+    }
+
     /**
      * Show the form for creating a new blog post.
      *
@@ -38,7 +64,7 @@ class BlogController extends Controller
 
         $blog = Blog::create($validatedData);
 
-        return redirect()->route('admin.blogs.show', $blog)->with('success', 'Blog post created successfully.');
+        return redirect()->route('blogs.show', $blog)->with('success', 'Blog post created successfully.');
     }
 
     /**
@@ -73,7 +99,7 @@ class BlogController extends Controller
 
         $blog->update($validatedData);
 
-        return redirect()->route('admin.blogs.show', $blog)->with('success', 'Blog post updated successfully.');
+        return redirect()->route('blogs.show', $blog)->with('success', 'Blog post updated successfully.');
     }
 
     /**

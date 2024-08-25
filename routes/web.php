@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\LocationController;
 use App\Http\Controllers\Admin\SettingController;
+use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Auth\RegisterController;
 /*
 |--------------------------------------------------------------------------
@@ -48,6 +49,15 @@ Route::prefix('admin')  ->group(function() {
         Route::get('/locations', [LocationController::class, 'index'])->name('location');  
         Route::get('/create', [LocationController::class, 'create'])->name('add_location');
         Route::post('/save_location', [LocationController::class, 'store'])->name('save.location');
+
+        Route::get('/blogs', [BlogController::class, 'index'])->name('blog_listing'); 
+        Route::get('/add_blog', [BlogController::class, 'create'])->name('add_blog');
+        Route::post('/save_blog', [BlogController::class, 'store'])->name('save_blog');
+        Route::get('/blog_delete/{id}', [BlogController::class, 'destroy'])->name('blog_delete');
+        Route::get('/blog_edit/{id}', [BlogController::class, 'edit'])->name('blog_edit');
+        Route::post('/blog_update/{id}', [BlogController::class, 'update'])->name('blog_update');
+       
+        
 
         Route::get('/logo_settings', [SettingController::class, 'logo_setting'])->name('logo_setting');
         Route::post('/save_logo_details', [SettingController::class, 'save_logo_settings'])->name('save_logo_details');

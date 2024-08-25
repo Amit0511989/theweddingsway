@@ -13,7 +13,7 @@ class CreateBlogTable extends Migration
      */
     public function up()
     {
-        Schema::create('blog', function (Blueprint $table) {
+        Schema::create('blogs', function (Blueprint $table) {
             $table->id(); // Auto-incrementing ID
             $table->string('title'); // Title of the blog post
             $table->text('content'); // Content of the blog post
@@ -34,6 +34,6 @@ class CreateBlogTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('blog');
+        Schema::dropIfExists('blogs');
     }
 }

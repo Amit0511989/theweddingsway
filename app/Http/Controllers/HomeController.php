@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
 
 class HomeController extends Controller
 {
@@ -28,7 +29,8 @@ class HomeController extends Controller
 
     public function profile($id)
     {
-        
-        return view('profile');
+        $user = User::with(['role_detail', 'location'])->where('id', $id)->first();
+
+        return view('profile', compact('user'));
     }
 }

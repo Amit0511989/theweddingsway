@@ -66,22 +66,34 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \App\Models\User
      */
-    protected function create(array $data)
+    protected function create(Request $request)
     {
+     
+        $validatedData = $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255|unique:users',
+            'password' => 'required|string|min:8|confirmed',
+        ]);
+
+  
         
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-            'mobile' => $data['mobile'],
-            'role' => $data['role'],
-            'location_id' => $data['location_id'],
+        $user =  User::create([
+            'name' => $validatedData['name'],
+            'email' => $validatedData['email'],
+            'password' => Hash::make($validatedData['password']),
+            'mobile' => $request->mobile,
+            'role' => $request->role,
+            'location_id' => $request->location_id,
             'status' => 0,
         ]);
+
+        return redirect()->route('users_listing')->with('success', 'User created successfully.');
+
     }
 
     public function showRegistrationForm(){
 
+        
         $locations = Location::orderby('id', 'desc')->get();
         $roles = Role::select(['id', 'name'])->orderBy('id', 'desc')->get();
 

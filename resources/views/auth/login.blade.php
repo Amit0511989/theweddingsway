@@ -1,4 +1,15 @@
 @extends('layouts.app')
+<section class="breadcrumbs-page">
+    <div class="container">
+        <h1>Login Vendor</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href=""><i class="fa fa-home"></i></a></li>
+                <li class="breadcrumb-item active" aria-current="page">Login Vendor</li>
+            </ol>
+        </nav>
+    </div>
+</section>
 
 @section('content')
 <div class="container">

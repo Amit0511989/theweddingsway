@@ -2,127 +2,7 @@
 
 @section('content')
 
-    <!-- preloader -->
-    <div class="preloader">
-        <div class="status" style="display: none;">
-            <img src="https://wedjio.com/front/images/logo.gif" alt="Logo">
-        </div>
-    </div>
-    <!-- end preloader -->
-
-    <!--  WeddingDir top -->
-    <header class="fixed-top header-anim">
-    <div class="top-bar-stripe">
-        <div class="container px-md-0">
-            <div class="row align-items-center">
-                <div class="col-lg-auto col-sm-12">
-                    <div class="top-icons">
-                        <span>Plan your perfect wedding with us</span>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-lg">
-                    <div class="social-icons">
-                        <ul class="list-unstyled">
-                            <li><a href="#" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
-                            <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Main Navigation Start -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container text-nowrap bdr-nav px-0">
-            <div class="d-flex mr-auto">
-                <a class="navbar-brand" href="https://wedjio.com">
-                    <img src="https://wedjio.com/front/images/logo.gif" alt="">
-                </a>
-            </div>
-            <!-- Topbar Request Quote Start -->
-            <span class="order-lg-last d-inline-flex">
-                            
-                <a class="btn " style="background-color:#af69ef; color:#fff" href="#">Vendor Login</a>
-                        </span>
-
-            <!-- Toggle Button Start -->
-            <button class="navbar-toggler x collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <!-- Toggle Button End -->
-
-            <!-- Topbar Request Quote End -->
-
-            <div class="collapse navbar-collapse" id="navbarCollapse" data-hover="dropdown" data-animations="slideInUp slideInUp slideInUp slideInUp">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item dropdown megamenu-li">
-                        <a class="nav-link dropdown-toggle-mob" href="javascript:void(0)" id="megamenu-list-vendors" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Vendors<i class="fa fa-chevron-down"></i></a>
-                        <div class="dropdown-menu megamenu dropdownhover-bottom" aria-labelledby="megamenu-list-vendors">
-                            <div class="row">
-                                <div class="col-sm-6 col-lg-4 col-md-4">
-                                    <a class="dropdown-item" href="#">Makeup Artist</a>
-                                    <a class="dropdown-item" href="#">Wedding Photographer</a>
-                                    <a class="dropdown-item" href="#">Mehndi Artist</a>
-                                </div>
-                                <div class="col-sm-6 col-lg-4 col-md-4">
-                                    <a class="dropdown-item" href="#">Wedding Invitation</a>
-                                </div>                                                                
-                            </div>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown megamenu-li">
-                        <a class="nav-link dropdown-toggle-mob" href="javascript:void(0)" id="megamenu-list-city" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Top Cities<i class="fa fa-chevron-down"></i></a>
-                        <div class="dropdown-menu megamenu dropdownhover-bottom" aria-labelledby="megamenu-list-city">
-                            <div class="row">
-                                <div class="col-sm-6 col-lg-3 col-md-4">
-                                        <a class="dropdown-item" href="#">Hyderabad</a>
-                                        <a class="dropdown-item" href="#">Delhi</a>
-                                        <a class="dropdown-item" href="#">Surat</a>
-                                        <a class="dropdown-item" href="#">Panchkula</a>
-                                </div>
-                                <div class="col-sm-6 col-lg-3 col-md-4">
-                                    <a class="dropdown-item" href="#">Bhopal</a>
-                                    <a class="dropdown-item" href="#">Mumbai</a>
-                                    <a class="dropdown-item" href="#">Pune</a>
-                                    <a class="dropdown-item" href="#">Amritsar</a>
-                                </div>
-                                <div class="col-sm-6 col-lg-3 col-md-4">
-                                    <a class="dropdown-item" href="#">Chandigarh</a>
-                                    <a class="dropdown-item" href="#">Mohali</a>
-                                    <a class="dropdown-item" href="#">Jaipur</a>
-                                    <a class="dropdown-item" href="#">Bareilly</a>
-                                </div>
-                                <div class="col-sm-6 col-lg-3 col-md-4">
-                                    <a class="dropdown-item" href="#">Kanpur</a>
-                                    <a class="dropdown-item" href="#">Lucknow</a>
-                                    <a class="dropdown-item" href="#">Meerut</a>
-                                    <a class="dropdown-item" href="#">Noida</a>
-                                </div>
-                                </div>
-                        </div>
-                    </li>                    
-                    <li class="nav-item ">
-                        <a href="#" class="nav-link">Articles</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Real-Wedding</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
-                    </li>
-                </ul>
-                <!-- Main Navigation End -->
-            </div>
-        </div>
-    </nav>
-    <!-- Main Navigation End -->
-</header>    <!--  WeddingDir top -->
+   
 
     <!-- page content start -->
 
@@ -342,7 +222,7 @@
                                         <a href="#" class="btn btn-default btn-rounded btn-sm">View Details</a> 
                                     </div>
                                     <div class="vendor-icon"><i class="fa fa-paint-brush" aria-hidden="true"></i>  </div>
-                                    <a href="#"><img src="https://wedjio.com/storage/upload/category/makeup.jpg" class="round-img" alt=""></a>
+                                    <a href="#"><img src="{{ asset('public/storage/images//category/henna-mehndi-hindu.jpg') }} " class="round-img" alt=""></a>
                                 </div>
                                 <div class="content">
                                     <h3><a href="#">Makeup Artist</a></h3>
@@ -357,7 +237,7 @@
                                             <a href="#" class="btn btn-default btn-rounded btn-sm">View Details</a> 
                                         </div>
                                         <div class="vendor-icon"><i class="weddingdir_videographer"></i></div>
-                                        <a href="#"><img src="https://wedjio.com/storage/upload/category/photographer.jpg" class="round-img" alt=""></a>
+                                        <a href="#"><img src="{{ asset('public/storage/images//category/henna-mehndi-hindu.jpg') }} " class="round-img" alt=""></a>
                                     </div>
                                     <div class="content">
                                         <h3><a href="#">Wedding Photographer</a></h3>
@@ -372,25 +252,10 @@
                                             <a href="#" class="btn btn-default btn-rounded btn-sm">View Details</a> 
                                         </div>
                                         <div class="vendor-icon"><i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i> </div>
-                                        <a href="#"><img src="https://wedjio.com/storage/upload/category/mehandi.jpg" class="round-img" alt=""></a>
+                                        <a href="#"><img src="{{ asset('public/storage/images//category/henna-mehndi-hindu.jpg') }} " class="round-img" alt=""></a>
                                     </div>
                                     <div class="content">
                                         <h3><a href="#">Mehndi Artist</a></h3>
-                                    </div>                               
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 270px; margin-right: 20px;"><div class="col">
-                            <div class="item">
-                                <div class="vendor-listing-wrap">                                    
-                                    <div class="vendor-img">
-                                        <div class="overlay-box">
-                                            <a href="#" class="btn btn-default btn-rounded btn-sm">View Details</a> 
-                                        </div>
-                                        <div class="vendor-icon"><i class="weddingdir_heart_envelope"></i> </div>
-                                        <a href="#"><img src="https://wedjio.com/storage/upload/category/invitation.jpg" class="round-img" alt=""></a>
-                                    </div>
-                                    <div class="content">
-                                        <h3><a href="#">Wedding Invitation</a></h3>
                                     </div>                               
                                 </div>
                             </div>
@@ -402,7 +267,7 @@
                                             <a href="#" class="btn btn-default btn-rounded btn-sm">View Details</a> 
                                         </div>
                                         <div class="vendor-icon"><i class="fa fa-paint-brush" aria-hidden="true"></i></div>
-                                        <a href="#"><img src="https://wedjio.com/storage/upload/category/makeup.jpg" class="round-img" alt=""></a>
+                                        <a href="#"><img src="{{ asset('public/storage/images//category/photo.jpg') }}  " class="round-img" alt=""></a>
                                     </div>
                                     <div class="content">
                                         <h3><a href="#">Makeup Artist</a></h3>
@@ -417,7 +282,7 @@
                                             <a href="#" class="btn btn-default btn-rounded btn-sm">View Details</a> 
                                         </div>
                                         <div class="vendor-icon"> <i class="weddingdir_videographer"></i></div>
-                                        <a href="#"><img src="https://wedjio.com/storage/upload/category/photographer.jpg" class="round-img" alt=""></a>
+                                        <a href="#"><img src="{{ asset('public/storage/images//category/henna-mehndi-hindu.jpg') }}" class="round-img" alt=""></a>
                                     </div>
                                     <div class="content">
                                         <h3><a href="#">Wedding Photographer</a></h3>
@@ -432,7 +297,7 @@
                                             <a href="#" class="btn btn-default btn-rounded btn-sm">View Details</a> 
                                         </div>
                                         <div class="vendor-icon"><i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i></div>
-                                        <a href="#"><img src="https://wedjio.com/storage/upload/category/mehandi.jpg" class="round-img" alt=""></a>
+                                        <a href="#"><img src="{{ asset('public/storage/images//category/henna-mehndi-hindu.jpg') }}" class="round-img" alt=""></a>
                                     </div>
                                     <div class="content">
                                         <h3><a href="#">Mehndi Artist</a></h3>
@@ -462,7 +327,7 @@
                                             <a href="#" class="btn btn-default btn-rounded btn-sm">View Details</a> 
                                         </div>
                                         <div class="vendor-icon"><i class="fa fa-paint-brush" aria-hidden="true"></i></div>
-                                        <a href="#"><img src="https://wedjio.com/storage/upload/category/makeup.jpg" class="round-img" alt=""></a>
+                                        <a href="#"><img src="{{ asset('public/storage/images//category/photo.jpg') }}" class="round-img" alt=""></a>
                                     </div>
                                     <div class="content">
                                         <h3><a href="#">Makeup Artist</a></h3>
@@ -477,7 +342,7 @@
                                             <a href="#" class="btn btn-default btn-rounded btn-sm">View Details</a> 
                                         </div>
                                         <div class="vendor-icon"><i class="weddingdir_videographer"></i> </div>
-                                        <a href="#"><img src="https://wedjio.com/storage/upload/category/photographer.jpg" class="round-img" alt=""></a>
+                                        <a href="#"><img src="{{ asset('public/storage/images//category/henna-mehndi-hindu.jpg') }} " class="round-img" alt=""></a>
                                     </div>
                                     <div class="content">
                                         <h3><a href="#">Wedding Photographer</a></h3>
@@ -492,7 +357,7 @@
                                             <a href="#" class="btn btn-default btn-rounded btn-sm">View Details</a> 
                                         </div>
                                         <div class="vendor-icon"><i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i></div>
-                                        <a href="#"><img src="https://wedjio.com/storage/upload/category/mehandi.jpg" class="round-img" alt=""></a>
+                                        <a href="#"><img src="{{ asset('public/storage/images//category/henna-mehndi-hindu.jpg') }} " class="round-img" alt=""></a>
                                     </div>
                                     <div class="content">
                                         <h3><a href="#">Mehndi Artist</a></h3>
@@ -531,7 +396,7 @@
                 <div class="col ">
                     <div class="vendor-wrap-alt">
                         <div class="img">
-                            <img src="https://wedjio.com/storage/upload/vendor/featured/WhatsApp Image 2022-05-27 at 1.03.20 PM.jpeg" alt="WhatsApp Image 2022-05-27 at 1.03.20 PM.jpeg">
+                            <img src="{{ asset('public/storage/images/woman-traditional-dress.jpg') }} ">
                             <div class="img-content-top">
                                 <div class="top">
                                     <span class="is_top">
@@ -564,7 +429,7 @@
                 <div class="col ">
                     <div class="vendor-wrap-alt">
                         <div class="img">
-                            <img src="https://wedjio.com/storage/upload/vendor/featured/WhatsApp Image 2022-06-16 at 7.04.31 PM.jpeg" alt="WhatsApp Image 2022-06-16 at 7.04.31 PM.jpeg">
+                            <img src="{{ asset('public/storage/images/woman-traditional-dress.jpg') }}" alt="WhatsApp Image 2022-06-16 at 7.04.31 PM.jpeg">
                             <div class="img-content-top">
                                 <div class="top">
                                     <span class="is_top">
@@ -597,7 +462,7 @@
                 <div class="col ">
                     <div class="vendor-wrap-alt">
                         <div class="img">
-                            <img src="https://wedjio.com/storage/upload/vendor/featured/8F62nZ0gsdXkEUMQquqGgxhnTWwhfVkM4lR6TnxU.jpg" alt="8F62nZ0gsdXkEUMQquqGgxhnTWwhfVkM4lR6TnxU.jpg">
+                            <img src="{{ asset('public/storage/images/woman-traditional-dress.jpg') }}" alt="8F62nZ0gsdXkEUMQquqGgxhnTWwhfVkM4lR6TnxU.jpg">
                             <div class="img-content-top">
                                 <div class="top">
                                     <span class="is_top">
@@ -631,7 +496,7 @@
                  <div class="col ">
                     <div class="vendor-wrap-alt">
                         <div class="img">
-                            <img src="https://wedjio.com/storage/upload/vendor/featured/9YpjJXK2GSWuefUENqSIn5cUhc8pYwMllHsGsi2R.jpg" alt="9YpjJXK2GSWuefUENqSIn5cUhc8pYwMllHsGsi2R.jpg">
+                            <img src="{{ asset('public/storage/images/woman-traditional-dress.jpg') }}" alt="9YpjJXK2GSWuefUENqSIn5cUhc8pYwMllHsGsi2R.jpg">
                             <div class="img-content-top">
                                 <div class="top">
                                     <span class="is_top">
@@ -647,7 +512,7 @@
                         <div class="content">
                             <div class="vendor-heading">
                                 <h3> <i class="fa fa-paint-brush" aria-hidden="true"></i> 
-                                <a href="https://wedjio.com/profile/Ritu-gupta-makeup-artistry-5023">Ritu Gupta</a>
+                                <a href="#">Ritu Gupta</a>
                                 </h3>
                             </div>
                             <div class="mb-2">
@@ -664,7 +529,7 @@
                 <div class="col ">
                     <div class="vendor-wrap-alt">
                         <div class="img">
-                            <img src="https://wedjio.com/storage/upload/vendor/featured/bKDC0hbTbwLkEu58D5tOR5d42BZxd3rIHsdLtROp.jpg" alt="bKDC0hbTbwLkEu58D5tOR5d42BZxd3rIHsdLtROp.jpg">
+                            <img src="{{ asset('public/storage/images/woman-traditional-dress.jpg') }}" alt="bKDC0hbTbwLkEu58D5tOR5d42BZxd3rIHsdLtROp.jpg">
                             <div class="img-content-top">
                                 <div class="top">
                                     <span class="is_top">
@@ -697,7 +562,7 @@
                 <div class="col ">
                     <div class="vendor-wrap-alt">
                         <div class="img">
-                            <img src="https://wedjio.com/storage/upload/vendor/featured/ui4pahniGxtEuueb8OA3jiUdExDFTb4RUUdwdAkg.jpg" alt="ui4pahniGxtEuueb8OA3jiUdExDFTb4RUUdwdAkg.jpg">
+                            <img src="{{ asset('public/storage/images/woman-traditional-dress.jpg') }}" alt="ui4pahniGxtEuueb8OA3jiUdExDFTb4RUUdwdAkg.jpg">
                             <div class="img-content-top">
                                 <div class="top">
                                     <span class="is_top">
@@ -730,7 +595,7 @@
                 <div class="col ">
                     <div class="vendor-wrap-alt">
                         <div class="img">
-                            <img src="https://wedjio.com/storage/upload/vendor/featured/137Jd0MskqLRABjpSoBrwzi0rAclDNsy1jcdAcdZ.jpg" alt="137Jd0MskqLRABjpSoBrwzi0rAclDNsy1jcdAcdZ.jpg">
+                            <img src="{{ asset('public/storage/images/woman-traditional-dress.jpg') }}" alt="137Jd0MskqLRABjpSoBrwzi0rAclDNsy1jcdAcdZ.jpg">
                             <div class="img-content-top">
                                 <div class="top">
                                     <span class="is_top">
@@ -763,7 +628,7 @@
                 <div class="col ">
                     <div class="vendor-wrap-alt">
                         <div class="img">
-                            <img src="https://wedjio.com/storage/upload/vendor/featured/j3ZgBKH9nYgKTkaRAlXV95A3mNOtiB2RzE3z8Oby.jpg" alt="j3ZgBKH9nYgKTkaRAlXV95A3mNOtiB2RzE3z8Oby.jpg">
+                            <img src="{{ asset('public/storage/images/woman-traditional-dress.jpg') }}" alt="j3ZgBKH9nYgKTkaRAlXV95A3mNOtiB2RzE3z8Oby.jpg">
                             <div class="img-content-top">
                                 <div class="top">
                                     <span class="is_top">
@@ -2142,7 +2007,7 @@
                                 </div>
                                 <div class="icon"><i class="weddingdir_chat"></i></div>
                             </div>
-                            <div class="text">Wedjio made our special day truly unforgettable! From seamless coordination to exquisite decor, every detail was handled with care. As a bride, I was amazed at how they transformed our vision into a stunning reality. Our guests are still raving about the magical atmosphere and impeccable service. Thank you, Wedjio, for making our dreams come true!</div>
+                            <div class="text">TheweddingWay made our special day truly unforgettable! From seamless coordination to exquisite decor, every detail was handled with care. As a bride, I was amazed at how they transformed our vision into a stunning reality. Our guests are still raving about the magical atmosphere and impeccable service. Thank you, TheweddingWay, for making our dreams come true!</div>
                         </div>
                     </div>
                 </div></div><div class="owl-item cloned" style="width: 540px; margin-right: 30px;"><div class="item">
@@ -2156,7 +2021,7 @@
                                 </div>
                                 <div class="icon"><i class="weddingdir_chat"></i></div>
                             </div>
-                            <div class="text">Our wedding day was a fairytale come true, and Wedjio played a crucial role in making it happen. They took our ideas and turned them into a reality, creating an atmosphere that was truly magical. As the bride, I was amazed at how seamlessly everything flowed, thanks to their meticulous planning and coordination. Our guests were in awe of the beautiful decorations and flawless execution. Wedjio truly exceeded our expectations, and we can't thank them enough for making our day unforgettable!</div>
+                            <div class="text">Our wedding day was a fairytale come true, and TheweddingWay played a crucial role in making it happen. They took our ideas and turned them into a reality, creating an atmosphere that was truly magical. As the bride, I was amazed at how seamlessly everything flowed, thanks to their meticulous planning and coordination. Our guests were in awe of the beautiful decorations and flawless execution. TheweddingWay truly exceeded our expectations, and we can't thank them enough for making our day unforgettable!</div>
                         </div>
                     </div>
                 </div></div><div class="owl-item active" style="width: 540px; margin-right: 30px;"><div class="item">
@@ -2170,7 +2035,7 @@
                                 </div>
                                 <div class="icon"><i class="weddingdir_chat"></i></div>
                             </div>
-                            <div class="text">Choosing Wedjio was one of the best decisions we made for our wedding. As the groom, I appreciated their attention to detail and ability to bring our vision to life. They took care of every aspect of the planning process, allowing us to relax and enjoy the day with our loved ones. Our wedding was a reflection of us as a couple, and we couldn't be happier with how everything turned out. Thank you, Wedjio, for making our day perfect!</div>
+                            <div class="text">Choosing TheweddingWay was one of the best decisions we made for our wedding. As the groom, I appreciated their attention to detail and ability to bring our vision to life. They took care of every aspect of the planning process, allowing us to relax and enjoy the day with our loved ones. Our wedding was a reflection of us as a couple, and we couldn't be happier with how everything turned out. Thank you, TheweddingWay, for making our day perfect!</div>
                         </div>
                     </div>
                 </div></div><div class="owl-item active" style="width: 540px; margin-right: 30px;"><div class="item">
@@ -2184,7 +2049,7 @@
                                 </div>
                                 <div class="icon"><i class="weddingdir_chat"></i></div>
                             </div>
-                            <div class="text">We are so grateful to Wedjio for their exceptional service and support throughout our wedding planning journey. From the initial consultation to the final moments of our reception, they were there to ensure everything ran smoothly. As a couple, we felt heard and understood, and Wedjio delivered beyond our expectations. Our wedding day was magical, and we have Wedjio to thank for making it all possible!</div>
+                            <div class="text">We are so grateful to TheweddingWay for their exceptional service and support throughout our wedding planning journey. From the initial consultation to the final moments of our reception, they were there to ensure everything ran smoothly. As a couple, we felt heard and understood, and TheweddingWay delivered beyond our expectations. Our wedding day was magical, and we have TheweddingWay to thank for making it all possible!</div>
                         </div>
                     </div>
                 </div></div><div class="owl-item" style="width: 540px; margin-right: 30px;"><div class="item">
@@ -2198,7 +2063,7 @@
                                 </div>
                                 <div class="icon"><i class="weddingdir_chat"></i></div>
                             </div>
-                            <div class="text">Wedjio made our special day truly unforgettable! From seamless coordination to exquisite decor, every detail was handled with care. As a bride, I was amazed at how they transformed our vision into a stunning reality. Our guests are still raving about the magical atmosphere and impeccable service. Thank you, Wedjio, for making our dreams come true!</div>
+                            <div class="text">TheweddingWay made our special day truly unforgettable! From seamless coordination to exquisite decor, every detail was handled with care. As a bride, I was amazed at how they transformed our vision into a stunning reality. Our guests are still raving about the magical atmosphere and impeccable service. Thank you, TheweddingWay, for making our dreams come true!</div>
                         </div>
                     </div>
                 </div></div><div class="owl-item" style="width: 540px; margin-right: 30px;"><div class="item">
@@ -2212,7 +2077,7 @@
                                 </div>
                                 <div class="icon"><i class="weddingdir_chat"></i></div>
                             </div>
-                            <div class="text">Our wedding day was a fairytale come true, and Wedjio played a crucial role in making it happen. They took our ideas and turned them into a reality, creating an atmosphere that was truly magical. As the bride, I was amazed at how seamlessly everything flowed, thanks to their meticulous planning and coordination. Our guests were in awe of the beautiful decorations and flawless execution. Wedjio truly exceeded our expectations, and we can't thank them enough for making our day unforgettable!</div>
+                            <div class="text">Our wedding day was a fairytale come true, and TheweddingWay played a crucial role in making it happen. They took our ideas and turned them into a reality, creating an atmosphere that was truly magical. As the bride, I was amazed at how seamlessly everything flowed, thanks to their meticulous planning and coordination. Our guests were in awe of the beautiful decorations and flawless execution. TheweddingWay truly exceeded our expectations, and we can't thank them enough for making our day unforgettable!</div>
                         </div>
                     </div>
                 </div></div><div class="owl-item cloned" style="width: 540px; margin-right: 30px;"><div class="item">
@@ -2226,7 +2091,7 @@
                                 </div>
                                 <div class="icon"><i class="weddingdir_chat"></i></div>
                             </div>
-                            <div class="text">Choosing Wedjio was one of the best decisions we made for our wedding. As the groom, I appreciated their attention to detail and ability to bring our vision to life. They took care of every aspect of the planning process, allowing us to relax and enjoy the day with our loved ones. Our wedding was a reflection of us as a couple, and we couldn't be happier with how everything turned out. Thank you, Wedjio, for making our day perfect!</div>
+                            <div class="text">Choosing TheweddingWay was one of the best decisions we made for our wedding. As the groom, I appreciated their attention to detail and ability to bring our vision to life. They took care of every aspect of the planning process, allowing us to relax and enjoy the day with our loved ones. Our wedding was a reflection of us as a couple, and we couldn't be happier with how everything turned out. Thank you, TheweddingWay, for making our day perfect!</div>
                         </div>
                     </div>
                 </div></div><div class="owl-item cloned" style="width: 540px; margin-right: 30px;"><div class="item">
@@ -2240,7 +2105,7 @@
                                 </div>
                                 <div class="icon"><i class="weddingdir_chat"></i></div>
                             </div>
-                            <div class="text">We are so grateful to Wedjio for their exceptional service and support throughout our wedding planning journey. From the initial consultation to the final moments of our reception, they were there to ensure everything ran smoothly. As a couple, we felt heard and understood, and Wedjio delivered beyond our expectations. Our wedding day was magical, and we have Wedjio to thank for making it all possible!</div>
+                            <div class="text">We are so grateful to TheweddingWay for their exceptional service and support throughout our wedding planning journey. From the initial consultation to the final moments of our reception, they were there to ensure everything ran smoothly. As a couple, we felt heard and understood, and TheweddingWay delivered beyond our expectations. Our wedding day was magical, and we have theweddingsway to thank for making it all possible!</div>
                         </div>
                     </div>
                 </div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><i class="fa fa-angle-left"></i></button><button type="button" role="presentation" class="owl-next"><i class="fa fa-angle-right"></i></button></div><div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div>
@@ -2258,8 +2123,8 @@
                     <h1 class="mb-md-0 txt-white">Are You Looking For Vendor For Your Wedding</h1>
                 </div>
                 <div class="col-lg-6 text-lg-right mt-lg-0 mt-md-4">
-                    <a href="https://wedjio.com" class="btn btn-default btn-rounded btn-lg mr-3 mb-3">Get Started Now</a>
-                    <a href="https://wedjio.com/vendors/all" class="btn btn-outline-default btn-rounded btn-lg mb-3">Our Services</a>
+                    <a href="#" class="btn btn-default btn-rounded btn-lg mr-3 mb-3">Get Started Now</a>
+                    <a href="#" class="btn btn-outline-default btn-rounded btn-lg mb-3">Our Services</a>
                 </div>
             </div>
         </div>

@@ -8,6 +8,10 @@ use App\Models\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Auth\Events\Registered;
+use Illuminate\Http\Request;
+use App\Models\Location;
+use App\Models\Role;
 
 class RegisterController extends Controller
 {
@@ -64,10 +68,25 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'mobile' => $data['mobile'],
+            'role' => $data['role'],
+            'location_id' => $data['location_id'],
+            'status' => 0,
         ]);
     }
+
+    public function showRegistrationForm(){
+
+        $locations = Location::orderby('id', 'desc')->get();
+        $roles = Role::select(['id', 'name'])->orderBy('id', 'desc')->get();
+
+        return view('auth.register', compact('locations','roles'));
+    }
+
+    
 }

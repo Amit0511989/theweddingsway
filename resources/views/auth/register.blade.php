@@ -1,77 +1,92 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+<section class="breadcrumbs-page">
+    <div class="container">
+        <h1>Register Vendor</h1>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href=""><i class="fa fa-home"></i></a></li>
+                <li class="breadcrumb-item active" aria-current="page">Register Vendor</li>
+            </ol>
+        </nav>
+    </div>
+</section>
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
+<main id="body-content">
 
-                        <div class="row mb-3">
-                            <label for="name" class="col-md-4 col-form-label text-md-end">{{ __('Name') }}</label>
+    <!-- login Style Main Start -->
 
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+    <section class="wide-tb-60">
+        <div class="container">
+            <div class="row login-section">
+                <div class="offset-lg-3 p-0" id="login-image">
+                    <!--<img src="https://wedjio.com/front/images/bg_vendor_login.jpeg" class="" alt="">                    -->
+                </div>
+                <div class="col-md-12 col-lg-6 ">
+                    <div class="p-4">
+                        <div class="section-title my-4 text-center">
+                                                        <h3>Sign up with your email</h3>
+                            <p>Already have an account? <a href="#">Login</a></p>                       
+                        </div> 
+                        
+                        <div class="login-form mb-5">
 
-                                @error('name')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
+                            <form class="my-5" method="post" action="{{ route('register') }}" id="register-form" data-gtm-form-interact-id="0">
+                            <div class="form-group"> @csrf    <input class="form-control" placeholder="Full Name" type="text" name="name" id="name" value="">
+                                                                    </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Email ID" type="email" name="email" id="email" value="" data-gtm-form-interact-field-id="0">
+                                                                    </div>
+                                <div class="form-group">
+
+                                    <div class="password-eye">
+                                        <input class="form-control" placeholder="Password" type="password" name="password" id="password" value="" data-gtm-form-interact-field-id="1">
+                                        <span data-toggle="#password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                    </div>
+                                                                    </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Mobile" type="number" name="mobile" id="mobile" value="">
+                                                                    </div>
+
+                                <div class="form-group">
+                                    
+                                    <select name="role" id="category" class="form-light-select form-control ">
+                                        <option value="0" >Select Category</option>
+                                        @foreach($roles as $role)
+                                            <option value="{{$role['id']}}">{{$role['name']}}</option>
+                                        @endforeach                               
+                                                                            </select> </div>
+                                <div class="form-group">
+                                                                        <select class="form-light-select form-control" name="location_id" >
+                                        <option value="0" >Choose Location</option>
+                                        @foreach($locations as $location)
+                                            <option value="{{$location['id']}}">{{$location['city']}}( {{$location['state']}} )</option>
+                                        @endforeach
+                                                                        </select>
+                                           
+                                    
+                                                                    </div>
+
+                                <div class="form-group">
+                                    <p>By clicking 'Sign up', I agree to wedjio’s Privacy Policy and Terms of Use</p>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-default btn-block btn-rounded">Sign Up</button>
+                                </div>
+                            </form>
                         </div>
 
-                        <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="row mb-3">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-end">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
-
-                        <div class="row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+                        <!-- <div class="mt-4 text-center">
+                            <h3>Are you a Bride/Groom</h3>
+                            <a href="https://wedjio.com/login" class="btn btn-success btn-rounded ">User Login</a>                     
+                        </div> -->
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
+    <!-- login Style Main End -->
+
+</main>
 @endsection

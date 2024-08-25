@@ -1,7 +1,7 @@
  <!-- preloader -->
  <div class="preloader">
         <div class="status" style="display: none;">
-            <img src="{{ asset('public/storage/images/logotheweddingsway.png') }}" alt="Logo">
+            <img src="{{ asset('storage/images/logotheweddingsway.png') }}" alt="Logo">
             
         </div>
     </div>
@@ -32,7 +32,7 @@
         <div class="container text-nowrap bdr-nav px-0">
             <div class="d-flex mr-auto">
                 <a class="navbar-brand" href="#">                
-                    <img src="{{ asset('public/storage/images/logotheweddingsway.png') }}" alt="">
+                    <img src="{{ asset('storage/images/logotheweddingsway.png') }}" alt="">
                     
                 </a>
             </div>

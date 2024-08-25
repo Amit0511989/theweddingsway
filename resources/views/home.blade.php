@@ -222,7 +222,7 @@
                                         <a href="#" class="btn btn-default btn-rounded btn-sm">View Details</a> 
                                     </div>
                                     <div class="vendor-icon"><i class="fa fa-paint-brush" aria-hidden="true"></i>  </div>
-                                    <a href="#"><img src="{{ asset('public/storage/images//category/henna-mehndi-hindu.jpg') }} " class="round-img" alt=""></a>
+                                    <a href="#"><img src="{{ asset('storage/images//category/henna-mehndi-hindu.jpg') }} " class="round-img" alt=""></a>
                                 </div>
                                 <div class="content">
                                     <h3><a href="#">Makeup Artist</a></h3>
@@ -237,7 +237,7 @@
                                             <a href="#" class="btn btn-default btn-rounded btn-sm">View Details</a> 
                                         </div>
                                         <div class="vendor-icon"><i class="weddingdir_videographer"></i></div>
-                                        <a href="#"><img src="{{ asset('public/storage/images//category/henna-mehndi-hindu.jpg') }} " class="round-img" alt=""></a>
+                                        <a href="#"><img src="{{ asset('storage/images//category/henna-mehndi-hindu.jpg') }} " class="round-img" alt=""></a>
                                     </div>
                                     <div class="content">
                                         <h3><a href="#">Wedding Photographer</a></h3>
@@ -252,7 +252,7 @@
                                             <a href="#" class="btn btn-default btn-rounded btn-sm">View Details</a> 
                                         </div>
                                         <div class="vendor-icon"><i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i> </div>
-                                        <a href="#"><img src="{{ asset('public/storage/images//category/henna-mehndi-hindu.jpg') }} " class="round-img" alt=""></a>
+                                        <a href="#"><img src="{{ asset('storage/images//category/henna-mehndi-hindu.jpg') }} " class="round-img" alt=""></a>
                                     </div>
                                     <div class="content">
                                         <h3><a href="#">Mehndi Artist</a></h3>
@@ -267,7 +267,7 @@
                                             <a href="#" class="btn btn-default btn-rounded btn-sm">View Details</a> 
                                         </div>
                                         <div class="vendor-icon"><i class="fa fa-paint-brush" aria-hidden="true"></i></div>
-                                        <a href="#"><img src="{{ asset('public/storage/images//category/photo.jpg') }}  " class="round-img" alt=""></a>
+                                        <a href="#"><img src="{{ asset('storage/images//category/photo.jpg') }}  " class="round-img" alt=""></a>
                                     </div>
                                     <div class="content">
                                         <h3><a href="#">Makeup Artist</a></h3>
@@ -282,7 +282,7 @@
                                             <a href="#" class="btn btn-default btn-rounded btn-sm">View Details</a> 
                                         </div>
                                         <div class="vendor-icon"> <i class="weddingdir_videographer"></i></div>
-                                        <a href="#"><img src="{{ asset('public/storage/images//category/henna-mehndi-hindu.jpg') }}" class="round-img" alt=""></a>
+                                        <a href="#"><img src="{{ asset('storage/images//category/henna-mehndi-hindu.jpg') }}" class="round-img" alt=""></a>
                                     </div>
                                     <div class="content">
                                         <h3><a href="#">Wedding Photographer</a></h3>
@@ -297,7 +297,7 @@
                                             <a href="#" class="btn btn-default btn-rounded btn-sm">View Details</a> 
                                         </div>
                                         <div class="vendor-icon"><i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i></div>
-                                        <a href="#"><img src="{{ asset('public/storage/images//category/henna-mehndi-hindu.jpg') }}" class="round-img" alt=""></a>
+                                        <a href="#"><img src="{{ asset('storage/images//category/henna-mehndi-hindu.jpg') }}" class="round-img" alt=""></a>
                                     </div>
                                     <div class="content">
                                         <h3><a href="#">Mehndi Artist</a></h3>
@@ -327,7 +327,7 @@
                                             <a href="#" class="btn btn-default btn-rounded btn-sm">View Details</a> 
                                         </div>
                                         <div class="vendor-icon"><i class="fa fa-paint-brush" aria-hidden="true"></i></div>
-                                        <a href="#"><img src="{{ asset('public/storage/images//category/photo.jpg') }}" class="round-img" alt=""></a>
+                                        <a href="#"><img src="{{ asset('storage/images//category/photo.jpg') }}" class="round-img" alt=""></a>
                                     </div>
                                     <div class="content">
                                         <h3><a href="#">Makeup Artist</a></h3>
@@ -342,7 +342,7 @@
                                             <a href="#" class="btn btn-default btn-rounded btn-sm">View Details</a> 
                                         </div>
                                         <div class="vendor-icon"><i class="weddingdir_videographer"></i> </div>
-                                        <a href="#"><img src="{{ asset('public/storage/images//category/henna-mehndi-hindu.jpg') }} " class="round-img" alt=""></a>
+                                        <a href="#"><img src="{{ asset('storage/images//category/henna-mehndi-hindu.jpg') }} " class="round-img" alt=""></a>
                                     </div>
                                     <div class="content">
                                         <h3><a href="#">Wedding Photographer</a></h3>
@@ -357,7 +357,7 @@
                                             <a href="#" class="btn btn-default btn-rounded btn-sm">View Details</a> 
                                         </div>
                                         <div class="vendor-icon"><i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i></div>
-                                        <a href="#"><img src="{{ asset('public/storage/images//category/henna-mehndi-hindu.jpg') }} " class="round-img" alt=""></a>
+                                        <a href="#"><img src="{{ asset('storage/images//category/henna-mehndi-hindu.jpg') }} " class="round-img" alt=""></a>
                                     </div>
                                     <div class="content">
                                         <h3><a href="#">Mehndi Artist</a></h3>
@@ -396,7 +396,7 @@
                 <div class="col ">
                     <div class="vendor-wrap-alt">
                         <div class="img">
-                            <img src="{{ asset('public/storage/images/woman-traditional-dress.jpg') }} ">
+                            <img src="{{ asset('storage/images/woman-traditional-dress.jpg') }} ">
                             <div class="img-content-top">
                                 <div class="top">
                                     <span class="is_top">
@@ -429,7 +429,7 @@
                 <div class="col ">
                     <div class="vendor-wrap-alt">
                         <div class="img">
-                            <img src="{{ asset('public/storage/images/woman-traditional-dress.jpg') }}" alt="WhatsApp Image 2022-06-16 at 7.04.31 PM.jpeg">
+                            <img src="{{ asset('storage/images/woman-traditional-dress.jpg') }}" alt="WhatsApp Image 2022-06-16 at 7.04.31 PM.jpeg">
                             <div class="img-content-top">
                                 <div class="top">
                                     <span class="is_top">
@@ -462,7 +462,7 @@
                 <div class="col ">
                     <div class="vendor-wrap-alt">
                         <div class="img">
-                            <img src="{{ asset('public/storage/images/woman-traditional-dress.jpg') }}" alt="8F62nZ0gsdXkEUMQquqGgxhnTWwhfVkM4lR6TnxU.jpg">
+                            <img src="{{ asset('storage/images/woman-traditional-dress.jpg') }}" alt="8F62nZ0gsdXkEUMQquqGgxhnTWwhfVkM4lR6TnxU.jpg">
                             <div class="img-content-top">
                                 <div class="top">
                                     <span class="is_top">
@@ -496,7 +496,7 @@
                  <div class="col ">
                     <div class="vendor-wrap-alt">
                         <div class="img">
-                            <img src="{{ asset('public/storage/images/woman-traditional-dress.jpg') }}" alt="9YpjJXK2GSWuefUENqSIn5cUhc8pYwMllHsGsi2R.jpg">
+                            <img src="{{ asset('storage/images/woman-traditional-dress.jpg') }}" alt="9YpjJXK2GSWuefUENqSIn5cUhc8pYwMllHsGsi2R.jpg">
                             <div class="img-content-top">
                                 <div class="top">
                                     <span class="is_top">
@@ -529,7 +529,7 @@
                 <div class="col ">
                     <div class="vendor-wrap-alt">
                         <div class="img">
-                            <img src="{{ asset('public/storage/images/woman-traditional-dress.jpg') }}" alt="bKDC0hbTbwLkEu58D5tOR5d42BZxd3rIHsdLtROp.jpg">
+                            <img src="{{ asset('storage/images/woman-traditional-dress.jpg') }}" alt="bKDC0hbTbwLkEu58D5tOR5d42BZxd3rIHsdLtROp.jpg">
                             <div class="img-content-top">
                                 <div class="top">
                                     <span class="is_top">
@@ -562,7 +562,7 @@
                 <div class="col ">
                     <div class="vendor-wrap-alt">
                         <div class="img">
-                            <img src="{{ asset('public/storage/images/woman-traditional-dress.jpg') }}" alt="ui4pahniGxtEuueb8OA3jiUdExDFTb4RUUdwdAkg.jpg">
+                            <img src="{{ asset('storage/images/woman-traditional-dress.jpg') }}" alt="ui4pahniGxtEuueb8OA3jiUdExDFTb4RUUdwdAkg.jpg">
                             <div class="img-content-top">
                                 <div class="top">
                                     <span class="is_top">
@@ -595,7 +595,7 @@
                 <div class="col ">
                     <div class="vendor-wrap-alt">
                         <div class="img">
-                            <img src="{{ asset('public/storage/images/woman-traditional-dress.jpg') }}" alt="137Jd0MskqLRABjpSoBrwzi0rAclDNsy1jcdAcdZ.jpg">
+                            <img src="{{ asset('storage/images/woman-traditional-dress.jpg') }}" alt="137Jd0MskqLRABjpSoBrwzi0rAclDNsy1jcdAcdZ.jpg">
                             <div class="img-content-top">
                                 <div class="top">
                                     <span class="is_top">
@@ -628,7 +628,7 @@
                 <div class="col ">
                     <div class="vendor-wrap-alt">
                         <div class="img">
-                            <img src="{{ asset('public/storage/images/woman-traditional-dress.jpg') }}" alt="j3ZgBKH9nYgKTkaRAlXV95A3mNOtiB2RzE3z8Oby.jpg">
+                            <img src="{{ asset('storage/images/woman-traditional-dress.jpg') }}" alt="j3ZgBKH9nYgKTkaRAlXV95A3mNOtiB2RzE3z8Oby.jpg">
                             <div class="img-content-top">
                                 <div class="top">
                                     <span class="is_top">

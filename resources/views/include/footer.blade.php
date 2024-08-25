@@ -3,7 +3,7 @@
             <div class="row no-gutters">
                 <div class="col-lg-12 col-md-12">
                     <div class="footer-logo">
-                        <img src="{{ asset('public/storage/images/logotheweddingsway.png') }}" alt="Logo">
+                        <img src="{{ asset('storage/images/logotheweddingsway.png') }}" alt="Logo">
                         <p>Theweddingsway is an Indian online wedding planning platform and a wedding media publisher, enabling couples to plan their weddings in a convenient &amp; cost-effective manner.</p>
                         <a href="#" class="btn btn-default btn-lg mb-3">Register As a Vendor</a>
                     </div>
@@ -31,6 +31,4 @@
     ================================================== -->~
     <a id="back-to-top" href="javascript:" class="btn btn-outline-primary back-to-top" style="display: none;"><i class="fa fa-arrow-up"></i></a>
 
-    <a href="https://wa.me/9988535253" class="whatsapp_float" target="_blank" rel="noopener noreferrer">
-        <i class="fa fa-whatsapp whatsapp-icon"></i>
-    </a>
+    

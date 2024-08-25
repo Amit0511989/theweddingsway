@@ -15,15 +15,15 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://wedjio.com/front/css/base.css" rel="stylesheet"> 
-    <link rel="stylesheet" href="{{ asset('public/storage/front/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('storage/front/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;display=swap">
-    <link rel="stylesheet" href="{{ asset('public/storage/front/css/animate.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('public/storage/front/css/magnific-popup.css') }}">
-    <link rel="stylesheet" href="{{ asset('public/storage/front/css/datepicker.css') }}">
-    <link rel="stylesheet" href="{{ asset('public/storage/front/css/select2.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('public/storage/front/css/font-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('public/storage/front/css/jquery-ui.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('public/storage/front/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('storage/front/css/animate.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('storage/front/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ asset('storage/front/css/datepicker.css') }}">
+    <link rel="stylesheet" href="{{ asset('storage/front/css/select2.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('storage/front/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('storage/front/css/jquery-ui.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('storage/front/css/style.css') }}">
 
     <!-- Styles -->
     <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> -->

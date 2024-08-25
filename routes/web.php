@@ -12,6 +12,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\ForgotPasswordController;
 use App\Http\Controllers\Auth\ResetPasswordController;
 use App\Http\Controllers\Auth\VerificationController;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,6 +48,10 @@ Route::post('email/resend', [VerificationController::class, 'resend'])->name('ve
 // Home Route
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/profile/{id}', [HomeController::class, 'profile'])->name('profile');
+
+// User Profile
+Route::get('profile', [ProfileController::class, 'index'])->name('profile');
+
 
 // Admin Routes
 Route::prefix('admin')->group(function() {

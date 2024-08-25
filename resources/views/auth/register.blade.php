@@ -29,14 +29,24 @@
                                                         <h3>Sign up with your email</h3>
                             <p>Already have an account? <a href="#">Login</a></p>                       
                         </div> 
+
+                        @if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
                         
                         <div class="login-form mb-5">
 
                             <form class="my-5" method="post" action="{{ route('register') }}" id="register-form" data-gtm-form-interact-id="0">
-                            <div class="form-group"> @csrf    <input class="form-control" placeholder="Full Name" type="text" name="name" id="name" value="">
+                            <div class="form-group"> @csrf    <input class="form-control" placeholder="Full Name" type="text" name="name" id="name" value="{{ old('name') }}">
                                                                     </div>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Email ID" type="email" name="email" id="email" value="" data-gtm-form-interact-field-id="0">
+                                    <input class="form-control" placeholder="Email ID" type="email" name="email" id="email" value="{{ old('email') }}" data-gtm-form-interact-field-id="0">
                                                                     </div>
                                 <div class="form-group">
 
@@ -46,7 +56,7 @@
                                     </div>
                                                                     </div>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="Mobile" type="number" name="mobile" id="mobile" value="">
+                                    <input class="form-control" placeholder="Mobile" type="number" name="mobile" id="mobile" value="{{ old('mobile') }}">
                                                                     </div>
 
                                 <div class="form-group">

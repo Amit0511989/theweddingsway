@@ -36,6 +36,9 @@
     <link href="{{url('/assets/css/now-ui-dashboard.min.css?v=1.6.0')}}" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="{{url('/assets/demo/demo.css')}}" rel="stylesheet" />
+
+      <!-- Initialize CKEditor -->
+      <script src="https://cdn.ckeditor.com/4.20.1/standard/ckeditor.js"></script>
     
 </head>
 <style>
@@ -161,6 +164,24 @@
             ] 
         });
     });
+
+    $(function () {
+        $('#blogs-table').DataTable({
+            processing: true,
+            serverSide: true,
+            responsive: true,
+            ajax: "{{ route('blog_listing') }}",
+            columns: [
+                {data: 'id', name: 'id'},
+                {data: 'title', name: 'title'},
+                {data: 'content', name: 'content'},
+                /* {data: 'role', name: 'roles'}, */
+                {data: 'action', name: 'action'},
+            ] 
+        });
+    });
+
+    CKEDITOR.replace('editor');
 </script>
 
 

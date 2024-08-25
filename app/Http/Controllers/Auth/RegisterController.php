@@ -72,11 +72,9 @@ class RegisterController extends Controller
         $validatedData = $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:8|confirmed',
+            'password' => 'required|string|min:8',
         ]);
 
-  
-        
         $user =  User::create([
             'name' => $validatedData['name'],
             'email' => $validatedData['email'],
@@ -87,7 +85,7 @@ class RegisterController extends Controller
             'status' => 0,
         ]);
 
-        return redirect()->route('users_listing')->with('success', 'User created successfully.');
+        return redirect('');
 
     }
 

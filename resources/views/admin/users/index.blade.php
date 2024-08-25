@@ -39,24 +39,7 @@
             </div>
         </div>
     </div>
-    <script>
-        $(function () {
-        $('#users-table').DataTable({
-            processing: true,
-            serverSide: true,
-            responsive: true,
-            ajax: "{{ route('users_listing') }}",
-            columns: [
-                {data: 'id', name: 'id'},
-                {data: 'name', name: 'name'},
-                {data: 'email', name: 'email'},
-                /* {data: 'role', name: 'roles'}, */
-                {data: 'action', name: 'action'},
-            ] 
-        });
-    });
-
-    </script>
+ 
 
 @endsection
 

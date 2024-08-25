@@ -39,6 +39,13 @@
                 <p>Locations</p>
             </a>
         </li>
+
+        <li>
+            <a href="{{ route('blog_listing') }}">
+                <i class="now-ui-icons design_app"></i>
+                <p>Blogs</p>
+            </a>
+        </li>
         <li>
             <a data-toggle="collapse" href="#collapseExample">
                 <i class="now-ui-icons loader_gear"></i>

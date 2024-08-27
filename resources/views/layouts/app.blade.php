@@ -39,13 +39,13 @@
     </div>
 </body>
 
-<!-- <script src="https://wedjio.com/front/js/jquery-3.6.0.min.js"></script>
-    <script src="https://wedjio.com/front/library/owlcarousel/js/owl.carousel.min.js"></script> -->
-    <script src="{{ asset('storage/front/js/select2.min.js') }}"></script>
-   <!--  <script src="https://wedjio.com/front/library/jquery-ui/js/jquery-ui.min.js"></script>
+ <script src="https://wedjio.com/front/js/jquery-3.6.0.min.js"></script>
+    <script src="https://wedjio.com/front/library/owlcarousel/js/owl.carousel.min.js"></script> 
+        <script src="{{ asset('storage/front/js/select2.min.js') }}"></script>
+    <script src="https://wedjio.com/front/library/jquery-ui/js/jquery-ui.min.js"></script>
     <script src="https://wedjio.com/front/library/jquery-ui/js/jquery.ui.touch-punch.min.js"></script>
     <script src="https://wedjio.com/front/library/magnific-popup/jquery.magnific-popup.min.js"></script>
-    <script src="https://wedjio.com/front/library/isotope-layout/isotope.pkgd.min.js"></script>  -->
+    <script src="https://wedjio.com/front/library/isotope-layout/isotope.pkgd.min.js"></script> 
     <script src="https://wedjio.com/front/library/datepicker/js/datepicker.js"></script>    
     <script src="https://wedjio.com/front/js/script.js"></script>
     <script src="https://wedjio.com/front/js/custom.js"></script>

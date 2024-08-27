@@ -65,6 +65,7 @@ body {
                 <div class="d-flex justify-content-between align-items-center mb-3">
                     <h4 class="text-right">Profile Settings</h4>
                 </div>
+                
                 <div class="row mt-2">
                     <div class="col-md-12"><label class="labels">Name</label><input type="text" class="form-control" name="name" placeholder="first name" value="{{$user->name}}"></div>
                      </div>

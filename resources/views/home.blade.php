@@ -2,8 +2,6 @@
 
 @section('content')
 
-   
-
     <!-- page content start -->
 
         <section class="slider-wrap style-second">
@@ -17,179 +15,23 @@
                         <form action="#" method="post">
                             <input type="hidden" name="_token" value="LcmpVcemsevEoUiXkV3M0hILqzCAaelnfmL3POP2">                            <div class="form-bg row no-gutters align-items-center">
                                 <div class="col-12 col-md-5">
-                                    <select class="form-light-select theme-combo select2-hidden-accessible" name="category" data-select2-id="select2-data-1-rx4l" tabindex="-1" aria-hidden="true">
-                                        <option value="0" data-select2-id="select2-data-3-f3t4">Choose Vendor Type</option>
+                                    <select class="form-light-select form-control theme-combo select2" name="category" >
+                                        <option value="0" >Choose Vendor Type</option>
                                         <option value="all">All Categories</option>                                                                                                                    <option value="makeup-artist">Makeup Artist</option>
-                                        <option value="wedding-photographer">Wedding Photographer</option>
-                                        <option value="mehndi-artist">Mehndi Artist</option>
-                                        <option value="wedding-invitation">Wedding Invitation</option>
-                                    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-2-i3cx" style="width: 358.875px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-category-93-container"><span class="select2-selection__rendered" id="select2-category-93-container" role="textbox" aria-readonly="true" title="Choose Vendor Type">Choose Vendor Type</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                        @foreach($roles as $role)
+                                            <option value="{{$role['id']}}">{{$role['name']}}</option>
+                                        @endforeach  
+                                    </select>
                                 </div>
                                 <div class="col-12 col-md-5">
                                     <div class="px-2 w-100">
-                                        <select class="form-light-select theme-combo select2-hidden-accessible" name="city" data-select2-id="select2-data-4-jquw" tabindex="-1" aria-hidden="true">
-                                            <option value="0" data-select2-id="select2-data-6-brrj">Choose Location</option> 
+                                        <select class="form-light-select theme-combo form-control" name="city" >
+                                            <option value="0">Choose Location</option> 
                                             <option value="all">All Cities</option>                                               
-                                            <option value="Abhayapuri">Abhayapuri (Assam)</option>
-                                            <option value="Achabbal">Achabbal (Jammu &amp; Kashmir)</option>
-                                            <option value="Achhnera">Achhnera (Uttar Pradesh)</option>
-                                            <option value="Adilabad">Adilabad (Andhra Pradesh)</option>
-                                            <option value="Adra">Adra ( Purulia)</option>
-                                            <option value="Agra">Agra (Uttar Pradesh)</option>
-                                            <option value="Ahmedabad">Ahmedabad (Gujarat)</option>
-                                            <option value="Ahmednagar">Ahmednagar (Maharashtra)</option>
-                                            <option value="Ajmer">Ajmer (Rajasthan)</option>
-                                            <option value="Akola">Akola (Maharashtra)</option>
-                                            <option value="Aligarh">Aligarh (Uttar Pradesh)</option>
-                                            <option value="Allahabad">Allahabad (Uttar Pradesh)</option>
-                                            <option value="Alwar">Alwar (Rajasthan)</option>
-                                            <option value="Ambala">Ambala (Haryana)</option>
-                                            <option value="Amritsar">Amritsar (Punjab)</option>
-                                            <option value="Anakapalle">Anakapalle (Andhra Pradesh)</option>
-                                            <option value="Anantapur">Anantapur (Andhra Pradesh)</option>
-                                            <option value="Asika">Asika (Orissa)</option>
-                                            <option value="Asola">Asola (Delhi)</option>
-                                            <option value="Aurangabad">Aurangabad (Bihar)</option>
-                                            <option value="Azamgarh">Azamgarh (Uttar Pradesh)</option>
-                                            <option value="Bahadurgarh">Bahadurgarh (Haryana)</option>
-                                            <option value="Bangalore">Bangalore (Karnataka)</option>
-                                            <option value="Banganapalle">Banganapalle (Andhra Pradesh)</option>
-                                            <option value="Bareilly">Bareilly (Uttar Pradesh)</option>
-                                            <option value="Batala">Batala (Punjab)</option>
-                                            <option value="Begusarai">Begusarai (Bihar)</option>
-                                            <option value="Belgaum">Belgaum (Karnataka)</option>
-                                            <option value="Bellary">Bellary (Karnataka)</option>
-                                            <option value="Bheemunipatnam">Bheemunipatnam (Andhra Pradesh)</option>
-                                            <option value="Bhiwani">Bhiwani (Haryana)</option>
-                                            <option value="Bhopal">Bhopal (Madhya Pradesh)</option>
-                                            <option value="Bihar Sharif">Bihar Sharif (Bihar)</option>
-                                            <option value="Bikaner">Bikaner (Rajasthan)</option>
-                                            <option value="Chalakudy">Chalakudy (Kerala)</option>
-                                            <option value="Chandigarh">Chandigarh (Punjab)</option>
-                                            <option value="Chennai">Chennai (Tamil Nadu)</option>
-                                            <option value="Chennai">Chennai (Tamil Nadu)</option>
-                                            <option value="Coimbatore">Coimbatore (Tamil Nadu)</option>
-                                            <option value="Daltonganj">Daltonganj (Jharkhand)</option>
-                                            <option value="Dasua">Dasua (Punjab)</option>
-                                            <option value="Davanagere">Davanagere (Karnataka)</option>
-                                            <option value="Dehradun">Dehradun (Uttarakhand)</option>
-                                            <option value="Delhi">Delhi (Delhi)</option>
-                                            <option value="Deoria">Deoria (Uttar Pradesh)</option>
-                                            <option value="Dewas">Dewas (Madhya Pradesh)</option>
-                                            <option value="Dhar">Dhar (Madhya Pradesh)</option>
-                                            <option value="Dharampur">Dharampur ( India)</option>
-                                            <option value="Dhule">Dhule (Maharashtra)</option>
-                                            <option value="Dombivli">Dombivli (Maharashtra)</option>
-                                            <option value="Erode">Erode (Tamil Nadu)</option>
-                                            <option value="Faridabad">Faridabad (Haryana)</option>
-                                            <option value="Faridkot">Faridkot (Punjab)</option>
-                                            <option value="Gandhinagar">Gandhinagar (Gujarat)</option>
-                                            <option value="Gaya">Gaya (Bihar)</option>
-                                            <option value="Ghaziabad">Ghaziabad (Uttar Pradesh)</option>
-                                            <option value="Goalpara">Goalpara (Assam)</option>
-                                            <option value="Greater Noida">Greater Noida (Uttar Pradesh)</option>
-                                            <option value="Guntur">Guntur (Andhra Pradesh)</option>
-                                            <option value="Gurgaon">Gurgaon (Haryana)</option>
-                                            <option value="Guwahati">Guwahati (Assam)</option>
-                                            <option value="Gwalior">Gwalior (Madhya Pradesh)</option>
-                                            <option value="Haldwani">Haldwani (Uttarakhand)</option>
-                                            <option value="Haridwar">Haridwar (Uttarakhand)</option>
-                                            <option value="Hubli">Hubli (Karnataka)</option>
-                                            <option value="Hyderabad">Hyderabad (Andhra Pradesh)</option>
-                                            <option value="Indore">Indore (Madhya Pradesh)</option>
-                                            <option value="Jabalpur">Jabalpur (Madhya Pradesh)</option>
-                                            <option value="Jagraon">Jagraon (Punjab)</option>
-                                            <option value="Jaipur">Jaipur (Rajasthan)</option>
-                                            <option value="Jalandhar">Jalandhar (Punjab)</option>
-                                            <option value="Jamalpur">Jamalpur (Bihar)</option>
-                                            <option value="Jammu">Jammu (Jammu &amp; Kashmir)</option>
-                                            <option value="Jodhpur">Jodhpur (Rajasthan)</option>
-                                            <option value="Kakinada">Kakinada (Andhra Pradesh)</option>
-                                            <option value="Kalyan">Kalyan (Maharashtra)</option>
-                                            <option value="Kandukur">Kandukur (Andhra Pradesh)</option>
-                                            <option value="Kanpur">Kanpur (Uttar Pradesh)</option>
-                                            <option value="Kapurthala">Kapurthala (Punjab)</option>
-                                            <option value="Karkala">Karkala (Karnataka)</option>
-                                            <option value="Karnal">Karnal (Haryana)</option>
-                                            <option value="Khanna">Khanna (Punjab)</option>
-                                            <option value="Kolkata">Kolkata (West Bengal)</option>
-                                            <option value="Kota">Kota (Karnataka)</option>
-                                            <option value="Kota">Kota (Rajasthan)</option>
-                                            <option value="Kottayam">Kottayam (Kerala)</option>
-                                            <option value="Lucknow">Lucknow (Uttar Pradesh)</option>
-                                            <option value="Ludhiana">Ludhiana (Punjab)</option>
-                                            <option value="Madurai">Madurai (Tamil Nadu)</option>
-                                            <option value="Mahuli">Mahuli (Maharashtra)</option>
-                                            <option value="Malkapur">Malkapur (Maharashtra)</option>
-                                            <option value="Mandi">Mandi (Himachal Pradesh)</option>
-                                            <option value="Mangalore">Mangalore (Karnataka)</option>
-                                            <option value="Mathura">Mathura (Uttar Pradesh)</option>
-                                            <option value="Meerut">Meerut (Uttar Pradesh)</option>
-                                            <option value="Modinagar">Modinagar (Uttar Pradesh)</option>
-                                            <option value="Moga">Moga (Punjab)</option>
-                                            <option value="Mohali">Mohali (Punjab)</option>
-                                            <option value="Morvi">Morvi (Gujarat)</option>
-                                            <option value="Mul">Mul (Maharashtra)</option>
-                                            <option value="Mumbai">Mumbai (Maharashtra)</option>
-                                            <option value="Muzaffarnagar">Muzaffarnagar (Uttar Pradesh)</option>
-                                            <option value="Muzaffarpur">Muzaffarpur (Bihar)</option>
-                                            <option value="Mysore">Mysore (Karnataka)</option>
-                                            <option value="Nagaur">Nagaur (Rajasthan)</option>
-                                            <option value="Nagpur">Nagpur (Maharashtra)</option>
-                                            <option value="Nashik">Nashik (Maharashtra)</option>
-                                            <option value="Navi Mumbai">Navi Mumbai (Maharashtra)</option>
-                                            <option value="Nizamabad">Nizamabad (Andhra Pradesh)</option>
-                                            <option value="Noida">Noida (Uttar Pradesh)</option>
-                                            <option value="Palwal">Palwal (Haryana)</option>
-                                            <option value="Panchkula">Panchkula (Haryana)</option>
-                                            <option value="Panipat">Panipat (Haryana)</option>
-                                            <option value="Patiala">Patiala (Punjab)</option>
-                                            <option value="Patna">Patna (Bihar)</option>
-                                            <option value="Phagwara">Phagwara (Punjab)</option>
-                                            <option value="Punch">Punch (Jammu &amp; Kashmir)</option>
-                                            <option value="Pune">Pune (Maharashtra)</option>
-                                            <option value="Purulia">Purulia (West Bengal)</option>
-                                            <option value="Raipur">Raipur (Chhattisgarh)</option>
-                                            <option value="Rajkot">Rajkot (Gujarat)</option>
-                                            <option value="Ranchi">Ranchi (Jharkhand)</option>
-                                            <option value="Ratnagiri">Ratnagiri (Maharashtra)</option>
-                                            <option value="Rishikesh">Rishikesh (Uttarakhand)</option>
-                                            <option value="Rohtak">Rohtak (Haryana)</option>
-                                            <option value="Roorkee">Roorkee (Uttarakhand)</option>
-                                            <option value="Sagar">Sagar (Madhya Pradesh)</option>
-                                            <option value="Saharanpur">Saharanpur (Uttar Pradesh)</option>
-                                            <option value="Sangrur">Sangrur (Punjab)</option>
-                                            <option value="Satara">Satara (Maharashtra)</option>
-                                            <option value="Shamli">Shamli (Uttar Pradesh)</option>
-                                            <option value="Shimla">Shimla (Himachal Pradesh)</option>
-                                            <option value="Shimoga">Shimoga (Karnataka)</option>
-                                            <option value="Siliguri">Siliguri (West Bengal)</option>
-                                            <option value="Sitapur">Sitapur (Uttar Pradesh)</option>
-                                            <option value="Solan">Solan (Himachal Pradesh)</option>
-                                            <option value="Sonipat">Sonipat (Haryana)</option>
-                                            <option value="Srinagar">Srinagar (Jammu &amp; Kashmir)</option>
-                                            <option value="Sultanpur">Sultanpur (Uttar Pradesh)</option>
-                                            <option value="Surat">Surat (Gujarat)</option>
-                                            <option value="Thanesar">Thanesar (Haryana)</option>
-                                            <option value="Thiruvananthapuram">Thiruvananthapuram (Kerala)</option>
-                                            <option value="Thrissur">Thrissur (Kerala)</option>
-                                            <option value="Tirupati">Tirupati (Andhra Pradesh)</option>
-                                            <option value="Tumkur">Tumkur (Karnataka)</option>
-                                            <option value="Udaipur">Udaipur (Rajasthan)</option>
-                                            <option value="Ujjain">Ujjain (Madhya Pradesh)</option>
-                                            <option value="Vadodara">Vadodara (Gujarat)</option>
-                                            <option value="Vapi">Vapi (Gujarat)</option>
-                                            <option value="Varanasi">Varanasi (Uttar Pradesh)</option>
-                                            <option value="Varkala">Varkala (Kerala)</option>
-                                            <option value="Vellore">Vellore (Tamil Nadu)</option>
-                                            <option value="Vijayawada">Vijayawada (Andhra Pradesh)</option>
-                                            <option value="Virudhunagar">Virudhunagar (Tamil Nadu)</option>
-                                            <option value="Visakhapatnam">Visakhapatnam (Andhra Pradesh)</option>
-                                            <option value="Vrindavan">Vrindavan (Uttar Pradesh)</option>
-                                            <option value="Warangal">Warangal (Andhra Pradesh)</option>
-                                            <option value="Yadgir">Yadgir (Karnataka)</option>
-                                            <option value="Zirakpur">Zirakpur (Punjab)</option>
-                                        </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="select2-data-5-k8qu" style="width: 342.875px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-city-r3-container"><span class="select2-selection__rendered" id="select2-city-r3-container" role="textbox" aria-readonly="true" title="Choose Location">Choose Location</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                                            @foreach($locations as $location)
+                                                <option value="{{$location['id']}}">{{$location['city']}}( {{$location['state']}} )</option>
+                                            @endforeach
+                                        </select>
                                         </div>
                                 </div>
                                 <div class="col-12 col-md-2">
@@ -214,172 +56,29 @@
             </div>
             <div class="row">
                 <div class="owl-carousel owl-theme dots-black owl-loaded owl-drag" id="home-slider-listing-category">    
-                <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1740px, 0px, 0px); transition: all 2s ease 0s; width: 3480px;"><div class="owl-item cloned" style="width: 270px; margin-right: 20px;"><div class="col">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage" >
+                    @foreach($roles as $role)
+                    <div class="owl-item " >
+                        <div class="col">
                         <div class="item">
                             <div class="vendor-listing-wrap">                                    
                                 <div class="vendor-img">
                                     <div class="overlay-box">
-                                        <a href="#" class="btn btn-default btn-rounded btn-sm">View Details</a> 
+                                        <a href="{{ route('venderBySlug', ['slug' => $role['slug']]) }}" class="btn btn-default btn-rounded btn-sm">View Details</a> 
                                     </div>
                                     <div class="vendor-icon"><i class="fa fa-paint-brush" aria-hidden="true"></i>  </div>
                                     <a href="#"><img src="{{ asset('storage/images//category/henna-mehndi-hindu.jpg') }} " class="round-img" alt=""></a>
                                 </div>
                                 <div class="content">
-                                    <h3><a href="#">Makeup Artist</a></h3>
+                                    <h3><a href="{{ route('venderBySlug', ['slug' => $role['slug']]) }}">{{$role['name']}}</a></h3>
                                 </div>                               
                             </div>
                         </div>
-                        </div></div><div class="owl-item cloned" style="width: 270px; margin-right: 20px;"><div class="col">
-                            <div class="item">
-                                <div class="vendor-listing-wrap">                                    
-                                    <div class="vendor-img">
-                                        <div class="overlay-box">
-                                            <a href="#" class="btn btn-default btn-rounded btn-sm">View Details</a> 
-                                        </div>
-                                        <div class="vendor-icon"><i class="weddingdir_videographer"></i></div>
-                                        <a href="#"><img src="{{ asset('storage/images//category/henna-mehndi-hindu.jpg') }} " class="round-img" alt=""></a>
-                                    </div>
-                                    <div class="content">
-                                        <h3><a href="#">Wedding Photographer</a></h3>
-                                    </div>                               
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 270px; margin-right: 20px;"><div class="col">
-                            <div class="item">
-                                <div class="vendor-listing-wrap">                                    
-                                    <div class="vendor-img">
-                                        <div class="overlay-box">
-                                            <a href="#" class="btn btn-default btn-rounded btn-sm">View Details</a> 
-                                        </div>
-                                        <div class="vendor-icon"><i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i> </div>
-                                        <a href="#"><img src="{{ asset('storage/images//category/henna-mehndi-hindu.jpg') }} " class="round-img" alt=""></a>
-                                    </div>
-                                    <div class="content">
-                                        <h3><a href="#">Mehndi Artist</a></h3>
-                                    </div>                               
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item" style="width: 270px; margin-right: 20px;"><div class="col">
-                            <div class="item ">
-                                <div class="vendor-listing-wrap">                                    
-                                    <div class="vendor-img">
-                                        <div class="overlay-box">
-                                            <a href="#" class="btn btn-default btn-rounded btn-sm">View Details</a> 
-                                        </div>
-                                        <div class="vendor-icon"><i class="fa fa-paint-brush" aria-hidden="true"></i></div>
-                                        <a href="#"><img src="{{ asset('storage/images//category/photo.jpg') }}  " class="round-img" alt=""></a>
-                                    </div>
-                                    <div class="content">
-                                        <h3><a href="#">Makeup Artist</a></h3>
-                                    </div>                               
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item" style="width: 270px; margin-right: 20px;"><div class="col">
-                            <div class="item ">
-                                <div class="vendor-listing-wrap">                                    
-                                    <div class="vendor-img">
-                                        <div class="overlay-box">
-                                            <a href="#" class="btn btn-default btn-rounded btn-sm">View Details</a> 
-                                        </div>
-                                        <div class="vendor-icon"> <i class="weddingdir_videographer"></i></div>
-                                        <a href="#"><img src="{{ asset('storage/images//category/henna-mehndi-hindu.jpg') }}" class="round-img" alt=""></a>
-                                    </div>
-                                    <div class="content">
-                                        <h3><a href="#">Wedding Photographer</a></h3>
-                                    </div>                               
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item active" style="width: 270px; margin-right: 20px;"><div class="col">
-                            <div class="item">
-                                <div class="vendor-listing-wrap">                                    
-                                    <div class="vendor-img">
-                                        <div class="overlay-box">
-                                            <a href="#" class="btn btn-default btn-rounded btn-sm">View Details</a> 
-                                        </div>
-                                        <div class="vendor-icon"><i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i></div>
-                                        <a href="#"><img src="{{ asset('storage/images//category/henna-mehndi-hindu.jpg') }}" class="round-img" alt=""></a>
-                                    </div>
-                                    <div class="content">
-                                        <h3><a href="#">Mehndi Artist</a></h3>
-                                    </div>                               
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item active" style="width: 270px; margin-right: 20px;"><div class="col">
-                            <div class="item ">
-                                <div class="vendor-listing-wrap">                                    
-                                    <div class="vendor-img">
-                                        <div class="overlay-box">
-                                            <a href="#" class="btn btn-default btn-rounded btn-sm">View Details</a> 
-                                        </div>
-                                        <div class="vendor-icon"><i class="weddingdir_heart_envelope"></i>  </div>
-                                        <a href="#"><img src="https://wedjio.com/storage/upload/category/invitation.jpg" class="round-img" alt=""></a>
-                                    </div>
-                                    <div class="content">
-                                        <h3><a href="#">Wedding Invitation</a></h3>
-                                    </div>                               
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item cloned active" style="width: 270px; margin-right: 20px;"><div class="col">
-                            <div class="item">
-                                <div class="vendor-listing-wrap">                                    
-                                    <div class="vendor-img">
-                                        <div class="overlay-box">
-                                            <a href="#" class="btn btn-default btn-rounded btn-sm">View Details</a> 
-                                        </div>
-                                        <div class="vendor-icon"><i class="fa fa-paint-brush" aria-hidden="true"></i></div>
-                                        <a href="#"><img src="{{ asset('storage/images//category/photo.jpg') }}" class="round-img" alt=""></a>
-                                    </div>
-                                    <div class="content">
-                                        <h3><a href="#">Makeup Artist</a></h3>
-                                    </div>                               
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item cloned active" style="width: 270px; margin-right: 20px;"><div class="col">
-                            <div class="item">
-                                <div class="vendor-listing-wrap">                                    
-                                    <div class="vendor-img">
-                                        <div class="overlay-box">
-                                            <a href="#" class="btn btn-default btn-rounded btn-sm">View Details</a> 
-                                        </div>
-                                        <div class="vendor-icon"><i class="weddingdir_videographer"></i> </div>
-                                        <a href="#"><img src="{{ asset('storage/images//category/henna-mehndi-hindu.jpg') }} " class="round-img" alt=""></a>
-                                    </div>
-                                    <div class="content">
-                                        <h3><a href="#">Wedding Photographer</a></h3>
-                                    </div>                               
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 270px; margin-right: 20px;"><div class="col">
-                            <div class="item ">
-                                <div class="vendor-listing-wrap">                                    
-                                    <div class="vendor-img">
-                                        <div class="overlay-box">
-                                            <a href="#" class="btn btn-default btn-rounded btn-sm">View Details</a> 
-                                        </div>
-                                        <div class="vendor-icon"><i class="fa fa-american-sign-language-interpreting" aria-hidden="true"></i></div>
-                                        <a href="#"><img src="{{ asset('storage/images//category/henna-mehndi-hindu.jpg') }} " class="round-img" alt=""></a>
-                                    </div>
-                                    <div class="content">
-                                        <h3><a href="#">Mehndi Artist</a></h3>
-                                    </div>                               
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item cloned" style="width: 270px; margin-right: 20px;"><div class="col">
-                            <div class="item">
-                                <div class="vendor-listing-wrap">                                    
-                                    <div class="vendor-img">
-                                        <div class="overlay-box">
-                                            <a href="#" class="btn btn-default btn-rounded btn-sm">View Details</a> 
-                                        </div>
-                                        <div class="vendor-icon"><i class="weddingdir_heart_envelope"></i></div>
-                                        <a href="#"><img src="https://wedjio.com/storage/upload/category/invitation.jpg" class="round-img" alt=""></a>
-                                    </div>
-                                    <div class="content">
-                                        <h3><a href="#">Wedding Invitation</a></h3>
-                                    </div>                               
-                                </div>
-                            </div>
-                        </div></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><i class="fa fa-angle-left"></i></button><button type="button" role="presentation" class="owl-next"><i class="fa fa-angle-right"></i></button></div><div class="owl-dots disabled"></div></div>
+                        </div>
+                    </div>
+                    @endforeach
+                    </div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><i class="fa fa-angle-left"></i></button><button type="button" role="presentation" class="owl-next"><i class="fa fa-angle-right"></i></button></div><div class="owl-dots disabled"></div></div>
                      </div>
         </div>
     </section>
@@ -393,10 +92,11 @@
                 <h1>Top Vendors</h1>
             </div>
             <div class="row row-cols-2 row-cols-lg-4 row-cols-md-3 row-cols-sm-1">
+            @foreach($top_vendors as $vendor)
                 <div class="col ">
                     <div class="vendor-wrap-alt">
                         <div class="img">
-                            <img src="{{ asset('storage/images/woman-traditional-dress.jpg') }} ">
+                            <img src="{{ asset('public/storage/images/woman-traditional-dress.jpg') }} ">
                             <div class="img-content-top">
                                 <div class="top">
                                     <span class="is_top">
@@ -412,253 +112,21 @@
                         <div class="content">
                             <div class="vendor-heading">
                                 <h3> <i class="fa fa-paint-brush" aria-hidden="true"></i> 
-                                 <a href="#">Kavlin Kaur</a>
+                                 <a href="#">{{$vendor['name']}}</a>
                                 </h3>
                                 </div>
                             <div class="mb-2">
                                 <i class="fa fa-list" aria-hidden="true"></i> 
-                                Makeup by Kavlin K Ahuja <span class="verified"><i class="fa fa-check-circle"></i></span>
+                                {{$vendor['role_detail']['name']}} by {{$vendor['name']}} <span class="verified"><i class="fa fa-check-circle"></i></span>
                             </div>
                             <div class="mb-2">
                                 <i class="fa fa-map-marker" aria-hidden="true"></i> 
-                                Chandigarh
+                                {{$vendor['location']['city']}}
                             </div>                            
                         </div>                        
                     </div>
                 </div>
-                <div class="col ">
-                    <div class="vendor-wrap-alt">
-                        <div class="img">
-                            <img src="{{ asset('storage/images/woman-traditional-dress.jpg') }}" alt="WhatsApp Image 2022-06-16 at 7.04.31 PM.jpeg">
-                            <div class="img-content-top">
-                                <div class="top">
-                                    <span class="is_top">
-                                        <i class="fa fa-arrow-up"></i>
-                                        <span>Top</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="img-content">
-                                <span class="rating">0</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="vendor-heading">
-                                <h3><i class="fa fa-paint-brush" aria-hidden="true"></i> 
-                                 <a href="#">Rinky Sandhal</a>
-                                </h3>
-                               </div>
-                            <div class="mb-2">
-                                <i class="fa fa-list" aria-hidden="true"></i> 
-                                Rinky sandhal makeover <span class="verified"><i class="fa fa-check-circle"></i></span>
-                            </div>
-                            <div class="mb-2">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i> 
-                                Delhi
-                            </div>                            
-                        </div>                        
-                    </div>
-                </div>
-                <div class="col ">
-                    <div class="vendor-wrap-alt">
-                        <div class="img">
-                            <img src="{{ asset('storage/images/woman-traditional-dress.jpg') }}" alt="8F62nZ0gsdXkEUMQquqGgxhnTWwhfVkM4lR6TnxU.jpg">
-                            <div class="img-content-top">
-                                <div class="top">
-                                    <span class="is_top">
-                                        <i class="fa fa-arrow-up"></i>
-                                        <span>Top</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="img-content">
-                                <span class="rating">0</span>
-                            </div>
-                        </div>
-
-                        <div class="content">
-                            <div class="vendor-heading">
-                                <h3><i class="fa fa-paint-brush" aria-hidden="true"></i> 
-                                    <a href="#">Laxmi Mangla</a>
-                                </h3>
-                              </div>
-                            <div class="mb-2">
-                                <i class="fa fa-list" aria-hidden="true"></i> 
-                                blushnbrushbylaxmi <span class="verified"><i class="fa fa-check-circle"></i></span>
-                            </div>
-                            <div class="mb-2">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i> 
-                                Delhi
-                            </div>                            
-                        </div>                        
-                    </div>
-                </div>
-                 <div class="col ">
-                    <div class="vendor-wrap-alt">
-                        <div class="img">
-                            <img src="{{ asset('storage/images/woman-traditional-dress.jpg') }}" alt="9YpjJXK2GSWuefUENqSIn5cUhc8pYwMllHsGsi2R.jpg">
-                            <div class="img-content-top">
-                                <div class="top">
-                                    <span class="is_top">
-                                        <i class="fa fa-arrow-up"></i>
-                                        <span>Top</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="img-content">
-                                <span class="rating">0</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="vendor-heading">
-                                <h3> <i class="fa fa-paint-brush" aria-hidden="true"></i> 
-                                <a href="#">Ritu Gupta</a>
-                                </h3>
-                            </div>
-                            <div class="mb-2">
-                                <i class="fa fa-list" aria-hidden="true"></i> 
-                                Ritu gupta makeup artistry <span class="verified"><i class="fa fa-check-circle"></i></span>
-                            </div>
-                            <div class="mb-2">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i> 
-                                Agra
-                            </div>                            
-                        </div>                        
-                    </div>
-                </div>
-                <div class="col ">
-                    <div class="vendor-wrap-alt">
-                        <div class="img">
-                            <img src="{{ asset('storage/images/woman-traditional-dress.jpg') }}" alt="bKDC0hbTbwLkEu58D5tOR5d42BZxd3rIHsdLtROp.jpg">
-                            <div class="img-content-top">
-                                <div class="top">
-                                    <span class="is_top">
-                                        <i class="fa fa-arrow-up"></i>
-                                        <span>Top</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="img-content">
-                                <span class="rating">0</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="vendor-heading">
-                                <h3><i class="fa fa-paint-brush" aria-hidden="true"></i> 
-                                <a href="#">Akansha Anand</a>
-                                </h3>
-                            </div>
-                            <div class="mb-2">
-                                <i class="fa fa-list" aria-hidden="true"></i> 
-                                Glamorous faces by akansha Anand <span class="verified"><i class="fa fa-check-circle"></i></span>
-                            </div>
-                            <div class="mb-2">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i> 
-                                Delhi
-                            </div>                            
-                        </div>                        
-                    </div>
-                </div>
-                <div class="col ">
-                    <div class="vendor-wrap-alt">
-                        <div class="img">
-                            <img src="{{ asset('storage/images/woman-traditional-dress.jpg') }}" alt="ui4pahniGxtEuueb8OA3jiUdExDFTb4RUUdwdAkg.jpg">
-                            <div class="img-content-top">
-                                <div class="top">
-                                    <span class="is_top">
-                                        <i class="fa fa-arrow-up"></i>
-                                        <span>Top</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="img-content">
-                                <span class="rating">0</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="vendor-heading">
-                                <h3><i class="fa fa-paint-brush" aria-hidden="true"></i> 
-                                <a href="#">Sandhyarani Nayak</a>
-                                </h3>
-                            </div>
-                            <div class="mb-2">
-                                <i class="fa fa-list" aria-hidden="true"></i> 
-                                glamyouupby_sandhya <span class="verified"><i class="fa fa-check-circle"></i></span>
-                            </div>
-                            <div class="mb-2">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i> 
-                                Mumbai
-                            </div>                            
-                        </div>                        
-                    </div>
-                </div>
-                <div class="col ">
-                    <div class="vendor-wrap-alt">
-                        <div class="img">
-                            <img src="{{ asset('storage/images/woman-traditional-dress.jpg') }}" alt="137Jd0MskqLRABjpSoBrwzi0rAclDNsy1jcdAcdZ.jpg">
-                            <div class="img-content-top">
-                                <div class="top">
-                                    <span class="is_top">
-                                        <i class="fa fa-arrow-up"></i>
-                                        <span>Top</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="img-content">
-                                <span class="rating">0</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="vendor-heading">
-                                <h3><i class="fa fa-paint-brush" aria-hidden="true"></i> 
-                                <a href="#">MUSKAN BHATIA</a>
-                                </h3>
-                            </div>
-                            <div class="mb-2">
-                                <i class="fa fa-list" aria-hidden="true"></i> 
-                                TONIGUY <span class="verified"><i class="fa fa-check-circle"></i></span>
-                            </div>
-                            <div class="mb-2">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i> 
-                                Kanpur
-                            </div>                            
-                        </div>                        
-                    </div>
-                </div>
-                <div class="col ">
-                    <div class="vendor-wrap-alt">
-                        <div class="img">
-                            <img src="{{ asset('storage/images/woman-traditional-dress.jpg') }}" alt="j3ZgBKH9nYgKTkaRAlXV95A3mNOtiB2RzE3z8Oby.jpg">
-                            <div class="img-content-top">
-                                <div class="top">
-                                    <span class="is_top">
-                                        <i class="fa fa-arrow-up"></i>
-                                        <span>Top</span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="img-content">
-                                <span class="rating">0</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="vendor-heading">
-                                <h3><i class="fa fa-paint-brush" aria-hidden="true"></i> 
-                                <a href="#">Neha Karia Makeup</a>
-                                </h3>
-                            </div>
-                            <div class="mb-2">
-                                <i class="fa fa-list" aria-hidden="true"></i> 
-                                Neha karia makeup  hairstylist <span class="verified"><i class="fa fa-check-circle"></i></span>
-                            </div>
-                            <div class="mb-2">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i> 
-                                Mumbai
-                            </div>                            
-                        </div>                        
-                    </div>
-                </div>
-                                    
+                @endforeach                  
             </div>
         </div>
     </section>

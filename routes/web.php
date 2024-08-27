@@ -47,7 +47,9 @@ Route::post('email/resend', [VerificationController::class, 'resend'])->name('ve
 
 // Home Route
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/profile/{id}', [HomeController::class, 'profile'])->name('profile');
+Route::get('/profile/{id}', [HomeController::class, 'profile'])->name('vendorprofile');
+
+Route::get('vendors/all/{slug}', [HomeController::class, 'venderBySlug'])->name('venderBySlug');
 
 // User Profile
 Route::get('profile', [ProfileController::class, 'index'])->name('profile');
